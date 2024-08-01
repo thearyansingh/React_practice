@@ -1,0 +1,28 @@
+.outer-Switch{
+border:1px solid grey;
+height:8rem;
+width:20%;
+border-radius: 100px;
+position: relative;
+background-color: rgb(165, 152, 152);
+margin:10rem auto
+}
+.inner-switch{
+  border:1px solid black;
+  width:30%; 
+  border-radius:150px;
+  text-align: center;
+  font-size: 50px;
+  height:6rem ;
+  position: absolute;
+  left: 20px;
+  top:18px;
+}
+.on{
+    background-color: green;
+    transform:translateX(160px)
+}
+.off{
+    background-color: red;
+    transform:translateX(0)
+}
