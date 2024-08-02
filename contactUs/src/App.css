@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+font-family: "Poppins",sans-serif;
+}
+.container{
+  margin: 20px auto;
+  max-width: 1280px;
+}
+.container p{
+  max-width: 700px;
+}
+
+.contact_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:100px;
+  
+}
+.content_section{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.call{
+  display: flex;
+  gap: 20px;
+}
+.support{
+padding: 10px;
+color: white;
+background-color: black;
+border-radius: 3px;
+text-align: center;
+}
+.via{
+  padding: 10px;
+color: white;
+background-color: black;
+border-radius: 3px;
+text-align: center;
+}
+.form{
+  padding: 8px 0;
+  color: black;
+  background-color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+form{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position:relative;
+
+
+}
+.form-container input{
+  height: 40px;
+  border-radius: 3px;
+  padding:10px
+  
+}
+.form-container label{
+  position:absolute;
+  top:-14px;
+  left: 10px;
+  background-color: white;
+}
+
+
+
+
