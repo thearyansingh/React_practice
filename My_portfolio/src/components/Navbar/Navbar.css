@@ -4,7 +4,22 @@
     justify-content: space-between;
     margin: 20px 170px;
 }
+.Navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
 
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    cursor:pointer;
+    gap: 5px;
+}
+.nav-menu li img{
+    margin: auto;
+    display: flex;
+
+}
 .nav-menu{
     display: flex;
     align-items: center;
