@@ -4,6 +4,21 @@
     justify-content: space-between;
     margin: 20px 170px;
 }
+.logo{
+    position: relative;
+}
+.logo h1{
+    padding: 0;
+    font-size: 50px;
+    font-weight:600;
+}
+.logo img{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+    z-index: -1;
+}
 .Navbar ul li a{
     text-decoration: none;
     color: white;
@@ -37,4 +52,48 @@
 .nav-connect:hover{
     transform:scale(1.05);
     transition: 0.3s ease-in-out;
+}
+.nav-mob-open, .nav-mob-close {
+    display: none;
+}
+@media(max-width:768px){
+    .navbar{
+        margin:20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 100px;
+    
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width:30px
+    }
+    .nav-menu{
+        position:fixed;
+        align-items: start;
+        flex-direction: column;
+        top:0;
+        gap:30px;
+        background-color: #1F0016;
+        height:100%;
+        width:350px;
+        z-index:2;
+        transition:right 0.5s;
+        right:-350px
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        margin-top: 70px;
+        gap:20px
+    }
 }

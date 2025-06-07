@@ -1,103 +1,171 @@
-.about{
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
-justify-content: center;
+    justify-content: center;
     gap: 80px;
-    margin:80px 100px
+    margin: 80px 100px;
 }
-.about-title
-{
-    position: relative;
 
+.about-title {
+    position: relative;
 }
-.about-title h1{
+
+.about-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
 }
-.about-title img{
-   position:absolute;
-   bottom: 0;
-   right:0;
-   z-index:-1; 
-}
-.about-section{
-    display:flex;
-    gap:80px;
 
+.about-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
-.about-right{
+
+.about-section {
+    display: flex;
+    gap: 80px;
+}
+
+.about-right {
     display: flex;
     flex-direction: column;
     gap: 60px;
+}
 
-}
-.about-para{
-display: flex;
-flex-direction: column;
-gap:20px;
-font-size: 24px;
-font-weight: 500;
-}
-.about-skills{
+.about-para {
     display: flex;
     flex-direction: column;
-    gap:20px;
-
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 500;
 }
-.about-skill{
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-skill {
     display: flex;
     gap: 50px;
     align-items: center;
     transition: 0.3s;
 }
-.about-skill p{
+
+.about-skill p {
     min-width: 150px;
     font-size: 24px;
     font-weight: 500;
 }
-.about-skill hr{
+
+.about-skill hr {
     outline: none;
     border: none;
-    height:8px;
+    height: 8px;
     width: 50%;
     border-radius: 50px;
-    background: linear-gradient(270deg,#DF8908 10% , #8415FF 100% );
-
+    background: linear-gradient(270deg, #DF8908 10%, #8415FF 100%);
 }
-.about-achievements{
+
+.about-achievements {
     display: flex;
     width: 100%;
-    justify-content:space-around;
+    justify-content: space-around;
     margin-bottom: 80px;
 }
-.about-achievement{
+
+.about-achievement {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     transition: 0.3s;
 }
-.about-achievement h1{
+
+.about-achievement h1 {
     font-size: 60px;
     font-weight: 700;
-    background: linear-gradient(270deg,#DF8908 10% , #8415FF 100% );
-    background-clip:text;
+    background: linear-gradient(270deg, #DF8908 10%, #8415FF 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.about-achievement p{
-    font-size:22px;
+
+.about-achievement p {
+    font-size: 22px;
     font-weight: 500;
 }
-.about-skill:hover{
+
+.about-skill:hover {
     transform: scale(1.05);
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
-.about-achievement:hover{
+
+.about-achievement:hover {
     transform: scale(1.05);
     transition: 0.5s ease-in-out;
-    cursor: pointer;  
+    cursor: pointer;
+}
+
+/* Media Queries for max-width: 768px */
+@media (max-width: 768px) {
+    .about {
+        margin: 40px 20px; /* Reduce margins */
+        gap: 40px;
+        margin-left:500px; /* Reduce gap between sections */
+    }
+
+    .about-title h1 {
+        font-size: 40px; /* Reduce the title size */
+    }
+
+    .about-section {
+        flex-direction: column; /* Stack the sections vertically */
+        gap: 40px; /* Reduce gap between sections */
+    }
+
+    .about-left img {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .about-right {
+        gap: 30px; /* Reduce gap in the right section */
+    }
+
+    .about-para {
+        font-size: 18px; /* Reduce paragraph font size */
+    }
+
+    .about-skills {
+        gap: 15px; /* Reduce gap between skills */
+    }
+
+    .about-skill p {
+        font-size: 18px; /* Reduce skill text size */
+        min-width: auto; /* Allow text to take up available space */
+    }
+
+    .about-skill hr {
+        width: 100%; /* Make the skill bar take full width */
+    }
+
+    .about-achievements {
+        flex-direction: row; /* Stack achievements vertically */
+        gap: 50px;
+        margin-right: 450px /* Add some gap between achievements */
+    }
+
+    .about-achievement h1 {
+        font-size: 40px; /* Reduce achievement title size */
+    }
+
+    .about-achievement p {
+        font-size: 18px; /* Reduce achievement description size */
+    }
 }

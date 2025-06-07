@@ -27,6 +27,7 @@ const Contact = () => {
       if (data.success) {
 
         console.log("submitted")
+        alert("Email sent successfully")
         setResult("");
         event.target.reset();
       } else {
